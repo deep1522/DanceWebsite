@@ -1,0 +1,62 @@
+doctype html
+html
+    head
+    title
+        | Dance Website
+
+    style
+            include ../static/style.css
+    body
+        nav#navbar
+            
+
+            ul
+                #logo
+                    img(src="/static/Dance_logo.avif", alt="")
+                    | DDA
+                li.active #[a(href="/") home]
+                li #[a(href="/") About]
+                li #[a(href="/") Services]
+                li #[a(href="/") Class info]
+                li #[a(href="/") Contact Us]
+        
+        section#introSection
+            div Welcome to our Dance Academy
+            div Eat Sleep Dance Repeat
+        section#missionSection
+            h2 Our mission
+            .card
+                h3 Dance Perfection
+                .card-box
+                    .card-img
+                        img(src="/static/Dance_logo1.avif", alt="")
+                    div.card-content
+                        p This is the best dance academy
+            .card
+                h3 Dance the way u like
+                .card-box
+                    .card-img
+                        img(src="/static/Dance_logo2.avif", alt="")
+                    div.card-content
+                        p This is the best dance academy
+            .card
+                h3 Expert Teaching
+                .card-box
+                    .card-img
+                        img(src="/static/Dance_logo.avif", alt="")
+                    div.card-content
+                        p This is the best dance academy
+        section#sponsorSection
+            h3 Our sponsor
+            #sponsor
+                img(src="/static/logo1.jpg", alt="sponsor image",class="spImage")
+                img(src="/static/logo3.jpg", alt="sponsor image",class="spImage")
+                img(src="/static/logo1.jpg", alt="sponsor image",class="spImage")
+                img(src="/static/logo3.jpg", alt="sponsor image",class="spImage")
+        footer#footer
+            | copyright @ 2019 DDA.com | All rights reserved
+    
+
+        script
+            include ../static/index.js
+
